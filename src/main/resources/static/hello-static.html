@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>static content</title>
+</head>
+<body>
+정적 컨텐츠 입니다.
+
+Spring Boot는 src/main/resources/static, src/main/resources/public, src/main/resources/resources,
+src/main/resources/META-INF/resources 디렉토리의 파일들을 정적 리소스로 간주하고, 별도의 컨트롤러 없이도 제공할 수 있음.
+예를 들어, src/main/resources/static/hello.html 파일은 클라이언트가
+http://localhost:8080/hello.html을 요청하면 자동으로 반환됨.
+
+반면 templates는 반드시 컨트롤러를 통해 처리되어야 함.
+</body>
+</html>
