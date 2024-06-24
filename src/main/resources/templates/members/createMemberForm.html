@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container">
+    <form action="/members/new" method="post">
+        <!--폼 요소를 그룹화하여 스타일링을 용이하게 하는 컨테이너-->
+        <div class="form-group">
+            <!--폼 필드의 레이블을 정의. for 속성은 레이블이 연결될 폼 필드의 id를 지정.-->
+            <label for="name">이름</label>
+            <!--for="name": 이 레이블이 id="name"인 입력 필드와 연결됨. 사용자가 레이블을 클릭하면 해당 입력 필드로 포커스가 이동-->
+            <!--텍스트 입력 필드를 정의-->
+            <input type="text" id="name" name="name" placeholder="이름을 입력하세요">
+            <!--id="name": 폼 필드의 고유 식별자. 레이블의 for 속성과 연결.-->
+            <!--name="name": 폼 데이터를 서버로 전송할 때 사용할 파라미터 이름. 서버는 이 이름을 사용하여 폼 데이터를 식별.-->
+
+        </div>
+        <button type="submit">등록</button>
+    </form>
+</div>
+</body>
+</html>
