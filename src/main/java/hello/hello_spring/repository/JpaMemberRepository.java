@@ -9,6 +9,7 @@ import java.util.Optional;
 public class JpaMemberRepository implements MemberRepository {
 
     /*
+    JPA 사용하려면 Member 클래스에 @Entity 붙여주고, @Id 태그로 primekey 지정해줘야한다.
     EntityManager: EntityManagerFactory에서 생성되며, EntityManagerFactory는 DataSource를 포함한 여러 설정을 관리.
     */
     private final EntityManager em;
